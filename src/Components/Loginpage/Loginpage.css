@@ -1,0 +1,25 @@
+/* src/App.css */
+.login-container {
+    max-width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+   
+    justify-content: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .links {
+    text-align: center;
+    margin-top: 15px;
+  }
+  

@@ -1,0 +1,86 @@
+/* Main page container with background gradient and centered content */
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e2c545, #819796); /* Gradient background */
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Container for buttons with some spacing and flex layout */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Styling for each button */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  
+  /* Add hover effect with scale and shadow */
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Optional: Add a subtle animation on button appearance */
+  .button:nth-child(1) {
+    animation: fadeInUp 0.5s ease-out 0.1s forwards;
+  }
+  
+  .button:nth-child(2) {
+    animation: fadeInUp 0.5s ease-out 0.2s forwards;
+  }
+  
+  .button:nth-child(3) {
+    animation: fadeInUp 0.5s ease-out 0.3s forwards;
+  }
+  
+  .button:nth-child(4) {
+    animation: fadeInUp 0.5s ease-out 0.4s forwards;
+  }
+  
+  .button:nth-child(5) {
+    animation: fadeInUp 0.5s ease-out 0.4s forwards;
+  }
+  /* Fade-in animation for the main page */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in-up animation for buttons */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
